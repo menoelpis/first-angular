@@ -4,10 +4,15 @@ import { Component } from '@angular/core';
   moduleId: module.id,
   selector: 'app-another',
   template: `
-    <p>
-      another Works!
-    </p>
-  `
+    <article>
+      <ng-content></ng-content>
+    </article>
+  `,
+  styles: [`
+    article {
+      border: 1px solid black;
+    }
+  `]
 })
 export class AnotherComponent {
 }
