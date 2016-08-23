@@ -1,19 +1,14 @@
 import { Component } from '@angular/core';
-import { OtherComponent } from "./other/other.component";
+import {DatabindingComponent} from "./databinding/databinding.component";
 
 @Component({
   moduleId: module.id,
   selector: 'app-root',
   template: `
-    <h1>Inline Template</h1>
-    <app-other></app-other>
+    <h1>Root Component</h1>
+    <app-databinding></app-databinding>
   `,
-  styles: [`
-    h1 {
-      color: red;
-    }
-  `],
-  directives: [OtherComponent]
+  directives: [DatabindingComponent]
 })
 export class AppComponent {
 }
